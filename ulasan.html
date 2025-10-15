@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZA Academy-Ulasan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+   <nav>
+        <h1>🎓 AZA Academy</h1>
+        <ul>
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="index.html#kelasUmum">Kelas Umum</a></li>
+            <li><a href="index.html#kelasBahasa">Kelas Bahasa</a></li>
+            <li><a href="index.html#kelasBalita">Kelas Balita</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="ulasan.html">Ulasan</a></li>
+        </ul>
+
+        <!-- Tombol Mode -->
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider"></span>
+            <span class="mode-text">Mode Gelap</span>
+        </label>
+   </nav>
+</header>
+
+  <div class="review-container">
+    <h2>Tulis Ulasan Anda</h2>
+
+    <form id="reviewForm">
+      <div class="input-group">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+      </div>
+
+      <div class="input-group">
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating" required>
+          <option value="">Pilih rating</option>
+          <option value="5">⭐⭐⭐⭐⭐ - Sangat Baik</option>
+          <option value="4">⭐⭐⭐⭐ - Baik</option>
+          <option value="3">⭐⭐⭐ - Cukup</option>
+          <option value="2">⭐⭐ - Kurang</option>
+          <option value="1">⭐ - Buruk</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="ulasan">Ulasan</label>
+        <textarea id="ulasan" name="ulasan" rows="4" placeholder="Tulis ulasan Anda di sini..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Kirim Ulasan</button>
+    </form>
+
+    <div id="reviewList">
+      <h3>Ulasan Pengguna:</h3>
+      <ul id="ulasanContainer"></ul>
+    </div>
+  </div>
+
+<footer id="kontak">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🎓 AZA Academy</h3>
+                <p>Bimbingan belajar offline terpercaya dengan pengajar profesional dan fasilitas modern.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Link Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="index.html#kelasUmum">Kelas Umum</a></li>
+                    <li><a href="index.html#kelasBahasa">Kelas Bahasa</a></li>
+                    <li><a href="index.html#kelasBalita">Kelas Balita</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Kontak</h4>
+                <ul>
+                    <li>Email: <a href ="mailto:info@azaacademy.com">info@azaacademy.com</a></li>
+                    <li>Telepon: <a href="tel:+62 812 3456 7890">+62 812 3456 7890</a></li>
+                    <li>Alamat: Jl. Diponegoro No. 45, Surabaya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AZA Academy. Semua Hak Dilindungi. | Dibuat untuk UTS Pemrograman Web</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="kode.js"></script>
+</body>
+</html>
